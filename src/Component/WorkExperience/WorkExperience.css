@@ -1,0 +1,44 @@
+.work-experience {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    /* width: 100%; */
+    /* background-color: aquamarine; */
+}
+
+.work-experience-title {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.work-experience-title>span {
+    background-color: black;
+    color: orange;
+    padding-inline: 10px;
+}
+
+.about {
+    min-height: 90vh;
+}
+
+.work-cover {
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    background-color: orange;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+@media screen and (max-width : 480px) {
+    .work-experience {
+        flex-direction: column;
+        height: max-content;
+        /* text-align: left;
+        margin-top: 20px; */
+        /* min-height: 100vh; */
+        /* height: 100%; */
+    }
+}
