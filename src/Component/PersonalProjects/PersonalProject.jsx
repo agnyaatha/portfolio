@@ -9,8 +9,14 @@ import NoteTakingAppDetails from "./Details/NoteTakingAppDetails";
 import FreeCodeCampApp from "./Details/FreeCodeCampApp";
 import "./PersonalProject.css";
 
+const Slides = [<NoteTakingAppDetails />, <FreeCodeCampApp />];
+
 function PersonalProject() {
   SwiperCore.use([Navigation, Pagination]);
+
+  const slides = Slides.map((item) => {
+    return <SwiperSlide>{item}</SwiperSlide>;
+  });
 
   return (
     <div className="work-experience" id="personalProjects">
@@ -27,14 +33,18 @@ function PersonalProject() {
           navigation={true}
           pagination={{ clickable: true }}
           scrollbar={{ draggable: true }}
-          // key={4}
+          key={3}
         >
-          <SwiperSlide key={1}>
+          {/* <SwiperSlide>
             <NoteTakingAppDetails />
           </SwiperSlide>
-          <SwiperSlide key={2}>
+          <SwiperSlide>
             <FreeCodeCampApp />
           </SwiperSlide>
+          <SwiperSlide>
+            <PersonalPortfolio />
+          </SwiperSlide> */}
+          {slides}
         </Swiper>
       </div>
     </div>
