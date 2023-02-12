@@ -35,15 +35,6 @@ function PersonalProject() {
           scrollbar={{ draggable: true }}
           key={3}
         >
-          {/* <SwiperSlide>
-            <NoteTakingAppDetails />
-          </SwiperSlide>
-          <SwiperSlide>
-            <FreeCodeCampApp />
-          </SwiperSlide>
-          <SwiperSlide>
-            <PersonalPortfolio />
-          </SwiperSlide> */}
           {slides}
         </Swiper>
       </div>
