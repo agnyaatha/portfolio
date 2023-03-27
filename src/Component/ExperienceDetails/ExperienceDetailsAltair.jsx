@@ -39,21 +39,21 @@ function ExperienceDetailsAltair() {
         <h1 className="about-title">Altair India Private Limited</h1>
         <h3 className="about-subtitle">Project Trainee</h3>
         <p className="about-time">[ 08/2019 - 05/2020 ]</p>
-        <p className="about-desc">
-          <ul className="about-details">
-            <li key={1}>
-              <b>Feature Manager</b> - Analyze bugs, put a fix and manually test
-              those fixes. Actively involved in development and improvement of
-              new functionalities. Create new options by modification and usage
-              of existing functionalities.
-            </li>
-            <li key={2}>
-              <b>Element remeshing</b> - Finding those code block causing
-              performance hindrance to the application and provide an alternate
-              solution finally testing those performance improvements
-            </li>
-          </ul>
-        </p>
+        {/* <p className="about-desc"> */}
+        <ul className="about-details">
+          <li key={1}>
+            <b>Feature Manager</b> - Analyze bugs, put a fix and manually test
+            those fixes. Actively involved in development and improvement of new
+            functionalities. Create new options by modification and usage of
+            existing functionalities.
+          </li>
+          <li key={2}>
+            <b>Element remeshing</b> - Finding those code block causing
+            performance hindrance to the application and provide an alternate
+            solution finally testing those performance improvements
+          </li>
+        </ul>
+        {/* </p> */}
         <br />
         <p className="tool-tech">
           <b> Tools and technologies used</b>

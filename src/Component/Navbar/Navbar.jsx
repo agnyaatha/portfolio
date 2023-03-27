@@ -3,10 +3,10 @@ import "./Navbar.css";
 import { SlMenu } from "react-icons/sl";
 
 function Navbar() {
-  const navList = document.getElementById("navbar-list");
   // const hamburger = document.getElementById("hamburger");
 
   const handleHamburger = () => {
+    const navList = document.getElementById("navbar-list");
     navList.classList.toggle("show-list");
   };
 
@@ -23,20 +23,55 @@ function Navbar() {
       </button>
       {/* <a href="" className="nav-logo"></a> */}
       <ul className="navbar" id="navbar-list">
-        <li>
-          <a href="#introduction">About Me</a>
+        <li key={1}>
+          <a
+            href="#introduction"
+            onClick={() => {
+              handleHamburger();
+            }}
+          >
+            About Me
+          </a>
         </li>
-        <li>
-          <a href="#workExperience">Work Experience</a>
+        <li key={2}>
+          <a
+            href="#workExperience"
+            onClick={() => {
+              handleHamburger();
+            }}
+          >
+            Work Experience
+          </a>
         </li>
-        <li>
-          <a href="#personalProjects">Personal Projects</a>
+        <li key={3}>
+          <a
+            href="#personalProjects"
+            onClick={() => {
+              handleHamburger();
+            }}
+          >
+            Personal Projects
+          </a>
         </li>
-        <li>
-          <a href="#educationSection">Education and Skills</a>
+        <li key={4}>
+          <a
+            href="#educationSection"
+            onClick={() => {
+              handleHamburger();
+            }}
+          >
+            Education and Skills
+          </a>
         </li>
-        <li>
-          <a href="#contactsSection">Contact Me</a>
+        <li key={5}>
+          <a
+            href="#contactsSection"
+            onClick={() => {
+              handleHamburger();
+            }}
+          >
+            Contact Me
+          </a>
         </li>
       </ul>
     </div>

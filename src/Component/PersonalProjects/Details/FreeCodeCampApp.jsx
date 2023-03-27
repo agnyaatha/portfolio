@@ -14,46 +14,45 @@ function FreeCodeCampApp() {
         <h1 className="about-title">FreeCodeCamp Project</h1>
         <h3 className="about-subtitle">Frontend development using React JS</h3>
         <p className="about-time">[ 10/2022 - 11/2022]</p>
-        <p className="about-desc">
-          <ul className="about-details">
-            <li key={1}>
-              This is a simple web application done as a part of freeCodeCamp
-              projects to understand frontend part of web development.
-            </li>
-            <li key={2}>
-              <b>Frontend</b> - This part is being developed using React JS
-              framework and Javascript language. Styling and structure is done
-              through HTML5 and CSS3. Understading of data structures and
-              algorithms and React hooks were the key takeaways from this
-              project.
-            </li>
-            <li key={4}>
-              <b>Functionalities</b> -
-              <ul>
-                <li>
-                  <b>Random Quote generator</b> which makes an public api call
-                  and displays quote
-                </li>
-                <li>
-                  <b>Drum Machine</b> which generates pre defined sound on click
-                  of the provided buttons
-                </li>
-                <li>
-                  <b>Basic Calculator</b> which performs simple calculations
-                  which helped me to undertand logic building process
-                </li>
-                <li>
-                  <b>Markdown previewer</b> which displays the mardown script
-                  into formatted text
-                </li>
-                <li>
-                  <b>Pomodoro Timer</b> which is a simple session and leisure
-                  timer application
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </p>
+        {/* <p className="about-desc"> */}
+        <ul className="about-details">
+          <li key={1}>
+            This is a simple web application done as a part of freeCodeCamp
+            projects to understand frontend part of web development.
+          </li>
+          <li key={2}>
+            <b>Frontend</b> - This part is being developed using React JS
+            framework and Javascript language. Styling and structure is done
+            through HTML5 and CSS3. Understading of data structures and
+            algorithms and React hooks were the key takeaways from this project.
+          </li>
+          <li key={4}>
+            <b>Functionalities</b> -
+            <ul>
+              <li>
+                <b>Random Quote generator</b> which makes an public api call and
+                displays quote
+              </li>
+              <li>
+                <b>Drum Machine</b> which generates pre defined sound on click
+                of the provided buttons
+              </li>
+              <li>
+                <b>Basic Calculator</b> which performs simple calculations which
+                helped me to undertand logic building process
+              </li>
+              <li>
+                <b>Markdown previewer</b> which displays the mardown script into
+                formatted text
+              </li>
+              <li>
+                <b>Pomodoro Timer</b> which is a simple session and leisure
+                timer application
+              </li>
+            </ul>
+          </li>
+        </ul>
+        {/* </p> */}
         <br />
         <p className="tool-tech">
           <b> Tools and technologies used</b>

@@ -14,8 +14,8 @@ const Slides = [<NoteTakingAppDetails />, <FreeCodeCampApp />];
 function PersonalProject() {
   SwiperCore.use([Navigation, Pagination]);
 
-  const slides = Slides.map((item) => {
-    return <SwiperSlide>{item}</SwiperSlide>;
+  const slides = Slides.map((item, index) => {
+    return <SwiperSlide key={index}>{item}</SwiperSlide>;
   });
 
   return (

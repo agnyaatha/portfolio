@@ -40,9 +40,9 @@ const SKILL_SET = [
 ];
 
 function Skills() {
-  const skillsList = SKILL_SET.map((item) => {
+  const skillsList = SKILL_SET.map((item, index) => {
     return (
-      <div className="skill-button">
+      <div className="skill-button" key={index}>
         <span>{item[0]} </span>
         <span>{item[1]}</span>
       </div>
