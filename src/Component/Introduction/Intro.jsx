@@ -1,6 +1,7 @@
 import React from "react";
 import "./Intro.css";
 import Profilepic from "../../resources/profile-pic.png";
+import ReactGA from "react-ga";
 
 function Intro() {
   return (
@@ -32,12 +33,17 @@ function Intro() {
           <div className="download-button">
             {/* <a href="../../resources/ChethanResume.pdf" download> */}
             <button
-              onClick={() =>
+              onClick={() => {
                 window.open(
                   require("../../resources/ChethanResume.pdf"),
                   "_blank"
-                )
-              }
+                );
+                ReactGA.event({
+                  category: "downloadResume",
+                  action: "openResume",
+                  label: "resumeChecked",
+                });
+              }}
             >
               Download resume
             </button>

@@ -3,6 +3,7 @@ import { GrMail } from "react-icons/gr";
 import { SiLinkedin, SiGithub, SiInstagram } from "react-icons/si";
 import { FaPhoneSquareAlt, FaMapMarkedAlt } from "react-icons/fa";
 import "./Contact.css";
+import ReactGA from "react-ga";
 
 const linkedIn = "https://www.linkedin.com/in/chethan-c-532619168/";
 const github = "https://github.com/agnyaatha";
@@ -39,15 +40,42 @@ function Contact() {
           <br />
           <br />
           <div className="social-buttons">
-            <a href={linkedIn}>
+            <a
+              href={linkedIn}
+              onClick={() => {
+                ReactGA.event({
+                  category: "contactLink",
+                  action: "openLinkedIn",
+                  label: "linkedInButton",
+                });
+              }}
+            >
               <SiLinkedin />
             </a>
             &emsp;
-            <a href={github}>
+            <a
+              href={github}
+              onClick={() => {
+                ReactGA.event({
+                  category: "contactLink",
+                  action: "openGithub",
+                  label: "githubButton",
+                });
+              }}
+            >
               <SiGithub />
             </a>
             &emsp;
-            <a href={instagram}>
+            <a
+              href={instagram}
+              onClick={() => {
+                ReactGA.event({
+                  category: "contactLink",
+                  action: "openInstagram",
+                  label: "instagramButton",
+                });
+              }}
+            >
               <SiInstagram />
             </a>
           </div>
