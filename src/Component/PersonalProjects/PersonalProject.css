@@ -1,5 +1,5 @@
 .about {
-    height: 90vh;
+    min-height: 90vh;
 }
 
 .profile-cover {
