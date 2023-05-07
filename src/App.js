@@ -12,7 +12,7 @@ import React from "react";
 function App() {
   React.useEffect(() => {
     //Google Analytics
-    ReactGA.initialize("G-8849VMQHY7");
+    // ReactGA.initialize("G-8849VMQHY7");
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
 
